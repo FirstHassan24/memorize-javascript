@@ -97,9 +97,10 @@ console.log(char)
 //let texte=`hello world`;
 //let char=texte.charAt(0);
 //console.log(char)
-let texts=`hello`
-let slice=texts.slice(3);
-console.log(slice);
-if(1||0){
-    console.log(`truthy`)
-}
+//let texts=`hello`
+//let slice=texts.slice(3);
+//console.log(slice);
+//|| means or @@ means and
+//if(1||0){
+//    console.log(`truthy`)
+//}
