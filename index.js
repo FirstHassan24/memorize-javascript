@@ -33,9 +33,9 @@ if(guy<bro){
 }
 //the else command let you output something when the if commands 
 //condition is false
-else console.log('they will allow me to postpone it');
-let sign=prompt('may i get the call back tmrw');
-console.log(sign)
+//else console.log('they will allow me to postpone it');
+//let sign=prompt('may i get the call back tmrw');
+//console.log(sign)
 let a='abcdefg'
 let tex='Apple, banana, kiwi'
 let part=tex.slice(7,13);
@@ -104,3 +104,35 @@ console.log(char)
 //if(1||0){
 //    console.log(`truthy`)
 //}
+let agee=17;
+let yes=`i did it`
+if(!(agee>14 && agee<19)){
+    console.log(yes);
+}
+
+// in order for you to make this code to work check grammer and make
+//sure you dont use the let function in the if statement are else the
+//variable wont work and also keep the else if with the if statement
+//its reffering to. make sure to read all the small lines vsc code 
+//is reffering to in your code.
+// you can do it good luck slow and steady its okay to be stuck and 
+//go back
+let s=prompt('what will you get?');
+if(s===`social`){
+    var k=prompt(`when?`);
+}
+else if(s===null || s===``){
+    alert(`try again`)
+}
+else(alert(`try harder`))
+if(k===`now`){
+    alert(`you will get it on the same day`);
+}
+//dont forget alert
+else if(k===null || k===``){
+    alert(alert`keep going`)
+}
+else(alert`why not`)
+//keep going
+let sume= (a,b) => console.log(a+b)
+sume(`3`,`4`)
