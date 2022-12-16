@@ -9,6 +9,11 @@ let person={
 };
 //you use the dot. notation to change the string of any variable.
 person.name='wakil';
+// template literall allows you to join a variable with a string
+// template literal looks like this ${}
+let laste=`issifou`
+let aki=`issifou${laste}` 
+alert(aki);
 // you use an array to give multiple strings to a single variables
 selectedcolors=['bkue','red','black'];
 //you use the index to add remove  are change strings in an array 
