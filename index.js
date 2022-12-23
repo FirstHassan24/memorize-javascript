@@ -141,3 +141,20 @@ else(alert`why not`)
 //keep going
 let sume= (a,b) => console.log(a+b)
 sume(`3`,`4`)
+let gura=prompt(`how old are you`,20)
+alert(`i am ${gura}years old`)
+let n=prompt(`how old are you?`)
+if(n===`22`){
+    alert(`congratulation you are right!!!`)
+}
+let conf = confirm("You must be at least 18 years old to view this content.");
+let nam = prompt("What's your name?");
+let ag = prompt("What's your age?");
+
+if (ag>=18) {
+alert(`Welcome ${nam}!`);
+}
+else {
+alert(`Sorry ${nam}, you must be at least 18 years old to view this content.`);
+}
+
