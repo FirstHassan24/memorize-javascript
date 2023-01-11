@@ -238,11 +238,11 @@ switch (month) {
 //}
 //set a population limit for the aquarium
 let poplimit=10;
-let fish=0;
+let fis=0;
 //initiate while loop to run untill fish reaches population limit
-while (fish < poplimit){
-    fish++
-    console.log(`theirs room for` + (poplimit-fish) + ` more fish`);
+while (fis < poplimit){
+    fis++
+    console.log(`theirs room for` + (poplimit-fis) + ` more fish`);
 }
 //set a condition to true
 const icecapsaremelting=true
@@ -258,8 +258,8 @@ while(icecapsaremelting){
     }
 }
 do {
-    //execute code
-} while(condition);
+    `execute code`
+} while(false);
 //the do statement will run first and its followed by the while(condition)
 //once do is run once it will return to a normal while loop
 //set variable to 0
@@ -268,4 +268,50 @@ do {
     //increment variable by 1
     x++;
     console.log(x); 
-} while(false)
+} while(false);
+//initilaze a for statment with 5 iteration
+for(let i=0;i<4;i++){
+    console.log(i)
+}
+let arrayexample=[]
+for(i=0;i<3;i++){
+    arrayexample.push(i)
+    console.log(arrayexample);
+} 
+let fish=[`flounder`,`salmon`,`pike`];
+//initilize the loop to run for the total length of the array
+for(i=0;i<fish.length;i++){
+    console.log(fish[i]);
+}
+//for in statement calls for the properties of an object//
+const shark= {species:`great white`,color:`white`,numberofteeth:Infinity
+}
+for ( attribute in shark) {
+    console.log(attribute)
+}
+//print property value of object//
+for(attribute in shark){
+    console.log(shark[attribute])
+}
+//putting them togather calls for all the properties and values of an object//
+for (attribute in shark){
+    console.log(`${attribute}`.toUpperCase()+ `:${shark[attribute]}`)
+}
+const xz = 1;
+
+function az() {
+  const yx = 2;
+output(y);
+}
+
+
+function b() {
+  const zn = 3;
+  output(z);
+}
+
+function output(value) {
+  const para = document.createElement('p');
+  document.body.appendChild(para);
+  para.textContent = `Value: ${value}`;
+}
