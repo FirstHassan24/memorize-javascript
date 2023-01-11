@@ -12,7 +12,7 @@ person.name='wakil';
 // template literall allows you to join a variable with a string
 // template literal looks like this ${}
 let laste=`issifou`
-let aki=`issifou${laste}` 
+let aki=`wakil${laste}` 
 alert(aki);
 // you use an array to give multiple strings to a single variables
 selectedcolors=['bkue','red','black'];
@@ -57,14 +57,14 @@ console.log(string.length);
 console.log(string.slice(20,57))
 //you use the indexof command to find the possition of the first
 //accurance of a string
-console.log(string.indexOf('m'))
-console.log(string.indexOf('a',20))
-let day='monday'
-switch(day){
-    case 'monday' :console.log('1 am');
-    case 'tuesday': console.log('2am');break
-    case 'wendseday': console.log('3am');
-}
+//console.log(string.indexOf('m'))
+//console.log(string.indexOf('a',20))
+//let day='monday'
+//switch(day){
+    //case 'monday' :console.log('1 am');
+    //case 'tuesday': console.log('2am');break
+  //  case 'wendseday': console.log('3am');
+//}
 //this is whats called contanating strings it allows you to join
 //two strings togather this sign ${} means you wanna link two strings togather by puting the variable in it
 //let hi=`hope weathering wave is good`
@@ -151,10 +151,121 @@ let conf = confirm("You must be at least 18 years old to view this content.");
 let nam = prompt("What's your name?");
 let ag = prompt("What's your age?");
 
+//if you type your answere in prompt it can be recalled using
+//${prompt variable in here}
 if (ag>=18) {
 alert(`Welcome ${nam}!`);
 }
 else {
 alert(`Sorry ${nam}, you must be at least 18 years old to view this content.`);
 }
-
+// set the current day of the week to a variable with 0 being sunday and 6 being saterday
+const day=new Date().getDay();
+switch(day) {
+    case 0:console.log(`its sunday, time to relaxe`);
+    break;
+    case 1:console.log(`happy monday!`);
+    break;
+    case 2:console.log(`its tuesday you got this.`)
+    break;
+    case 3:console.log(`hump day already!`)
+    break;
+    case 4:console.log(`just one more day til the weekend!`)
+    break;
+    case 5:console.log(`happy friday!`)
+    break;
+    case 6:console.log(`have a wonderful saterday!`)
+    default:
+        (`something went horribly wrong...`)
+}
+const grade=87;
+switch (true) {
+  //if score is 90 or greater
+  case grade>=90:
+  console.log(`A`);
+  break;
+//if score is 80 or greater
+case grade>=80:
+console.log(`B`)
+break;
+// if score is 70 or greater
+case grade>=70:
+console.log(`C`);
+break;
+//if score is 60 or greater
+case grade>= 60:
+console.log(`D`);
+break;
+//Anything 59 or below is failing
+default:
+console.log(`F`);
+}
+//the new Date().getMonth() methode will output a number from
+//1-11 with 0 being january and 11 being december
+const month=new Date().getMonth();
+switch (month) {
+    //january,feburary,march
+    case 0:
+    case 1:
+    case 2:
+        console.log(`winter`)
+        break;
+        //aprill,may,june
+        case 3:
+        case 4:
+        case 5:
+            console.log(`spring`)
+            break;
+        //july, August,September
+        case 6:
+        case 7:
+        case 8:
+     console.log(`summer`);
+     break
+    //october, november,Decmeber
+    case 9:
+    case 10:
+    case 11:
+    console.log(`autumn`)
+    break;
+    default:
+     console.log(`something whent wrong`);    
+}
+// in javascript the while statement is a loop as long as speceified
+//statements is true
+//while(condition){
+    //execute code as long as condition is true
+//}
+//set a population limit for the aquarium
+let poplimit=10;
+let fish=0;
+//initiate while loop to run untill fish reaches population limit
+while (fish < poplimit){
+    fish++
+    console.log(`theirs room for` + (poplimit-fish) + ` more fish`);
+}
+//set a condition to true
+const icecapsaremelting=true
+let polarbears = 5;
+//initiate infinit loop//
+while(icecapsaremelting){
+    console.log(`there are${polarbears}polar bears`)
+    polarbears--;
+    //terminate infinite loop
+    if(polarbears===0){
+        console.log(`there are no polarbears left`)
+        break
+    }
+}
+do {
+    //execute code
+} while(condition);
+//the do statement will run first and its followed by the while(condition)
+//once do is run once it will return to a normal while loop
+//set variable to 0
+let x =0;
+do {
+    //increment variable by 1
+    x++;
+    console.log(x); 
+} while(false)
